@@ -1,5 +1,4 @@
-[![GaryCooper-683](https://circleci.com/GaryCooper-683/Microservices-project5.svg?style=svg)](https://app.circleci.com/pipelines/github/GaryCooper-683/Microservices-project5)
-## Project Overview
+https://circleci.com/<github>/<GaryCooper-683>/<Microservices-project5>.svg?style=svg)](https://app.circleci.com/pipelines/github/GaryCooper-683/Microservices-project5
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
 
