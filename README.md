@@ -1,4 +1,4 @@
-https://circleci.com/gh/GaryCooper-683/Microservices-project5.svg?style=svg
+https://circleci.com/GaryCooper-683/Microservices-project5.svg?style=svg
 Profile image
 
 ## Project Overview
