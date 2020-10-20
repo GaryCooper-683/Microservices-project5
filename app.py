@@ -47,14 +47,13 @@ def predict():
         "LSTAT":{
         "0":4.98
         }
-        }
         
         result looks like:
         { "prediction": [ <val> ] }
         
-        """
+            """
     
-    # Logging the input payload
+     # Logging the input payload
     json_payload = request.json
     LOG.info(f"JSON payload: \n{json_payload}")
     inference_payload = pd.DataFrame(json_payload)
@@ -71,4 +70,3 @@ if __name__ == "__main__":
     # load pretrained model as clf
     clf = joblib.load("./model_data/boston_housing_prediction.joblib")
     app.run(host='0.0.0.0', port=80, debug=True) # specify port=80
-
