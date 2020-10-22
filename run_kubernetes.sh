@@ -14,5 +14,5 @@ kubectl create deployment --image=$dockerpath prediction-pod
 kubectl get pods
 
 # Step 4:
-kubectl port-forward pods/prediction-pod-794c8ff7b4-mbhz7   8000:80
+kubectl port-forward pods/prediction-pod-794c8ff7b4-rtjfh   8000:80
 

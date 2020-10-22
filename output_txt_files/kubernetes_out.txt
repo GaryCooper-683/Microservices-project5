@@ -1,9 +1,20 @@
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2020-10-13 01:57:56,492] INFO in app: Inference payload DataFrame: 
+[2020-10-22 04:04:00,659] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2020-10-13 01:57:56,517] INFO in app: <h>Scaling Payload: 
+[2020-10-22 04:04:00,670] INFO in app: <h>Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2020-10-13 01:57:56,521] INFO in app: Prediction <Response 48 bytes [200 OK]>
+[2020-10-22 04:04:00,675] INFO in app: Prediction {'prediction': [20.35373177134412]}
+127.0.0.1 - - [22/Oct/2020 04:04:00] "POST /predict HTTP/1.1" 200 -
+
+
+(.devops) gcoop683@ubuntu:~/Desktop/DevOps_Microservices/garycooper-project5-ml-microservice-kubernetes$ kubectl port-forward pods/prediction-pod-794c8ff7b4-rtjfh   8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+gcoop683@ubuntu:~/Desktop/DevOps_Microservices/garycooper-project5-ml-microservice-kubernetes$ kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+prediction-pod-794c8ff7b4-rtjfh   1/1     Running   0          11m
 
